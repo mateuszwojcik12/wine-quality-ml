@@ -10,4 +10,6 @@ imputer = KNNImputer(n_neighbors=2)
 #uzupełnianie danych brakujących
 df_filled = imputer.fit_transform(data)
 
-#df.to_csv('data.csv')
+dataframe = pd.DataFrame(data=df_filled)
+
+#dataframe.to_csv('data.csv')
